@@ -1,0 +1,19 @@
+{
+  "name": "cypress-orangehrm-e2e",
+  "version": "1.0.0",
+  "description": "End-to-end test suite for OrangeHRM using Cypress and TypeScript",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed",
+    "cy:report": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports,overwrite=false,html=true,json=true"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "typescript": "^5.3.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
